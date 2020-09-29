@@ -1,0 +1,15 @@
+#Program to display the count of letters in reversed manner
+
+letterandcount={}
+string=input("Enter the word:: ")
+for letter in string:
+    if letter in letterandcount.keys():
+        letterandcount[letter]+=1
+
+    else:
+        letterandcount[letter]=1
+
+
+
+for x in reversed(letterandcount):
+    print(str(x)+"="+str(letterandcount[x]))
